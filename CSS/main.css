@@ -1,14 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Barriecito|Indie+Flower|Josefin+Sans|Yanone+Kaffeesatz&display=swap');
+/* 
+font-family: 'Barriecito', cursive; ник нейм kpokodul
+font-family: 'Josefin Sans', sans-serif; стандарт для агл. букв
+font-family: 'Indie Flower', cursive; стандарт для смешны(Заголовок) англ. букв
+font-family: 'Yanone Kaffeesatz', sans-serif; стандарт для рус. букв
+font-family: 'Amatic SC', cursive; стандарт смешных(Заголовок) рус. букв
+*/
 * {
-	padding: 0;
-	margin: 0;
+    margin: 0;
+    padding: 0;
 }
-
-div {
-	font-family: sans-serif;
-	font-size: 45px;
-	text-align: center;
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 1%;
+    margin: 0 25%;
+    /* border: 3px solid #000; */
 }
-.Nagrada {
-	text-align: center;
-	display: inline-block;
+header h1 {
+    font-family: 'Barriecito', cursive;
+    font-size: 45px;
+    display: inline-block;
+    margin-bottom: 1%;
+}
+header a{
+    color: black;
+    text-decoration: none;
+}
+.news {
+    padding: 1%;
+    display: inline-block;
+}
+.st{
+    background: rgb(253, 253, 253);
+    margin-bottom: 1%;
+    display: inline-block;
+    border: 3px solid #2e2e2e83;
+}
+.st .text{
+    padding: 1%;
+}
+.news h2{
+    font-size: 35px;
+    font-family: 'Amatic SC', cursive;
+    margin-bottom: 1%;
+}
+.news span{
+    margin-bottom: 1%;
+    font-size: 35px;
+    font-family: 'Indie Flower', cursive;
+}
+.news a{
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+}
+.news .st .img img{
+    width: 100%;
+    height: auto;
+}
+.kpokodul {
+    padding: 1%;
+    text-align: left;
+}
+.kpokodul h2{
+    font-size: 40px;
+    text-align: right;
+}
+.kpokodul p{
+    width: 60%;
+    font-size: 18pt;
+    font-family: 'Amatic SC', cursive;
+}
+.ya-share2 {
+    margin-top: 3%;
+    padding: 2%;
+}
+footer {
+    margin-top: 1%;
+    text-align: center;
+    color: #242424cc;
+}
+footer p{
+    margin-top: 1%;
+}
+#vk_comments {
+    width: 60%;
+}
+@media screen and (max-width: 1441px) {
+    body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 1%;
+        margin: 0 20%;
+    }
+    .kpokodul {
+    padding: 1%;
+    text-align: left;
+    }
+    .kpokodul h2{
+    font-size: 40px;
+    text-align: right;
+    }
+    .kpokodul p{
+    width: 70%;
+    font-size: 18pt;
+    font-family: 'Amatic SC', cursive;
+    }
+}
+@media screen and (max-width: 1025px) {
+    body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 1%;
+        margin: 0 10%;
+    }
+    .kpokodul {
+    padding: 2%;
+    text-align: left;
+    }
+    .kpokodul h2{
+    font-size: 40px;
+    text-align: right;
+    }
+    .kpokodul p{
+    width: 80%;
+    font-size: 18pt;
+    font-family: 'Amatic SC', cursive;
+    }
+}
+@media screen and (max-width: 769px) {
+    body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 1%;
+        margin: 0 8%;
+    }
+    .kpokodul {
+    padding: 2%;
+    text-align: left;
+    }
+    .kpokodul h2{
+    font-size: 40px;
+    text-align: right;
+    }
+    .kpokodul p{
+    width: 90%;
+    font-size: 18pt;
+    font-family: 'Amatic SC', cursive;
+    }
+}
+@media screen and (max-width: 426px) {
+    body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 1%;
+        margin: 0 4%;
+    }
+    .kpokodul {
+    padding: 2%;
+    text-align: left;
+    }
+    .kpokodul h2{
+    font-size: 40px;
+    text-align: right;
+    }
+    .kpokodul p{
+    width: 100%;
+    font-size: 18pt;
+    font-family: 'Amatic SC', cursive;
+    }
+}
+@media screen and (max-width: 376px) {
+    body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 1%;
+        margin: 0 2%;
+    }
+    .kpokodul {
+    padding: 2%;
+    text-align: left;
+    }
+    .kpokodul h2{
+    font-size: 35px;
+    text-align: right;
+    }
+}
+@media screen and (max-width: 322px) {
+    body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 1%;
+        margin: 5px;
+    }
+    .kpokodul {
+    padding: 2%;
+    text-align: left;
+    }
+    .kpokodul h2{
+    font-size: 30px;
+    text-align: right;
+    }
 }
