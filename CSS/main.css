@@ -17,6 +17,7 @@ body {
     /* border: 3px solid #000; */
 }
 header h1 {
+    cursor: pointer;
     font-family: 'Barriecito', cursive;
     font-size: 45px;
     display: inline-block;
