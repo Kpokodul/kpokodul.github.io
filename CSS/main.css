@@ -87,6 +87,17 @@ footer p{
 #vk_comments {
     width: 60%;
 }
+.scrollup{
+    width:40px;
+    height:40px;
+    opacity:0.4;
+    position:fixed;
+    bottom:50px;
+    right:100px;
+    display:none;
+    text-indent:-9999px;
+    background: url("../img/ico/top_bottom.png") no-repeat;
+}
 @media screen and (max-width: 1441px) {
     body {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -126,6 +137,10 @@ footer p{
     font-size: 18pt;
     font-family: 'Amatic SC', cursive;
     }
+    .scrollup{
+    bottom:50px;
+    right:50px;
+    }
 }
 @media screen and (max-width: 769px) {
     body {
@@ -145,6 +160,10 @@ footer p{
     width: 90%;
     font-size: 18pt;
     font-family: 'Amatic SC', cursive;
+    }
+    .scrollup{
+    bottom:50px;
+    right:18px;
     }
 }
 @media screen and (max-width: 426px) {
@@ -166,6 +185,9 @@ footer p{
     font-size: 18pt;
     font-family: 'Amatic SC', cursive;
     }
+    .scrollup{
+    opacity: 0.3;
+    }
 }
 @media screen and (max-width: 376px) {
     body {
@@ -180,6 +202,9 @@ footer p{
     .kpokodul h2{
     font-size: 35px;
     text-align: right;
+    }
+    .scrollup{
+    opacity: 0.2;
     }
 }
 @media screen and (max-width: 322px) {
