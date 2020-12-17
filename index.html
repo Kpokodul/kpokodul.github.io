@@ -13,59 +13,66 @@
 
         <style>
             body {
-                 background: rgb(49, 49, 49); 
+                 background: rgb(241, 241, 241); 
             }
-            .row {
-                margin-left: 15%;
-            }
-            .boot span {
-                font-size: 3ch;
-            }
-            .l {
-                font-size: 4ch;
+            .sc{
+                margin-top: 15%;
             }
         </style>
     </head>
     <body>
-        <div class="container text-light position-absolute bottom-50">
-            <div class="row">
+        <div class="container">
+            <div class="row sc">
                 <div class="col-lg">
                     <h1 class="display-1">Скоро открытие...</h1>
                 </div>
-                <!-- <div class="col-sm">
-                    <h2 class="l"">Проверим совместимость</h2>
-                    <table class="table text-light">
-                        <thead>
-                          <tr>
-                            <th scope="col">Параметр</th>
-                            <th scope="col">Да / Нет</th>
-                          </tr>
+                <div class="col-sm">
+                    <h2>Проверим совместимость</h2>
+                    <table class="table table-hover">
+                        <thead class="table-dark">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Параметр</th>
+                                <th scope="col">Да / Нет</th>
+                            </tr>
                         </thead>
                         <tbody>
-                          <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">3</th>
-                            <td colspan="2">Larry the Bird</td>
-                            <td>@twitter</td>
-                          </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Поддержка HTML5</td>
+                                <td><u>Да</u></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Поддержка CSS3</td>
+                                <td><u>Да</u></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Поддержка JavaScript</td>
+                                <td><u>Да</u></td>
+                            </tr>
                         </tbody>
-                      </table>
-                </div> -->
-            </div> 
-        </div>
-        <div class="position-absolute bottom-0 left-0">
-            <h1 class="text-white-50 boot">Power by <br> <span>Bootstrap 5</span></h1>
+                        <tfoot  class="table-active">
+                            <tr>
+                                <th colspan="2">Актуальность браузера</th>
+                                <th>Да</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm"></div>
+                <div class="col-sm">
+                    <noscript>
+                        <div class="alert alert-danger" role="alert">
+                            <h6>JavaScript отключен или не поддерживается!</h6>
+                            Сайт может работать неправильно!
+                        </div>
+                    </noscript>
+                </div>
+            </div>
         </div>
         <!-- Option 1: Bootstrap Bundle with Popper.js -->
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
