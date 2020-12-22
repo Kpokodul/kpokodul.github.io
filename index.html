@@ -4,7 +4,7 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        
         <link rel="shortcut icon" href="2favicon.png" type="image/x-icon">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
@@ -69,7 +69,8 @@
                 <div class="col-sm">
                     
                     <div>
-                        <button type="button" class="btn btn-dark text-white-50" disabled>Технологии, которые будут использоваться на сайте</button>
+                        <!-- onclick="About()" --> 
+                        <button type="button" class="btn btn-dark text-white" data-toggle="modal" data-target="#exampleModal">Технологии, которые будут использоваться на сайте</button>
                         <h6><a href="#" class=""title="Скоро..."></a></h6>
                     </div>
                     <noscript>
@@ -78,6 +79,24 @@
                             Сайт может работать неправильно!
                         </div>
                     </noscript>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Технологии на сайте kpokodul.ru</h5>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Базовый стек</h6>
+                        <p>HTML5, CSS3 (SASS), JavaScript</p>
+                        <h6>Фреймворки</h6>
+                        <p>Bootstrap 5</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" data-dismiss="modal">Закрыть</button>
+                    </div>
                 </div>
             </div>
         </div>
