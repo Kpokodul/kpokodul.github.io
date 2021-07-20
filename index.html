@@ -21,14 +21,27 @@
             padding: 1%;
         }
 
+        footer {
+            background-color: #f8f9fa;
+            padding: 1%;
+        }
+
         @media (max-width: 1280px) {
             header > .row > .col-1 {
                 display: none;
+            }
+            header > .row > .col-sm{
+                margin-top: 10px;
+            }
+            .col-sm {
+                margin-top: 10px;
             }
         }
     </style>
 </head>
 <body>
+    <script src="https://yastatic.net/browser-updater/v1/script.js" charset="utf-8"></script>
+    <script>var yaBrowserUpdater = new ya.browserUpdater.init({"lang":"ru","browsers":{"yabrowser":"16.12","chrome":"62","ie":"11","opera":"49","safari":"12","fx":"67","iron":"Infinity","flock":"Infinity","palemoon":"Infinity","camino":"Infinity","maxthon":"Infinity","seamonkey":"Infinity"},"theme":"yellow"});</script>
     <header class="container-fluid">
         <div class="row">
             <div class="col-1">
@@ -36,15 +49,15 @@
             </div>
             <div class="col">
                 <div class="row">
-                    <div class="col"><h1>Kpokodul</h1></div>
+                    <div class="col-sm"><h1>Kpokodul</h1></div>
                 </div>
                 <div class="row">
-                    <div class="col"><h4 class="text-secondary">----</h4></div>
+                    <div class="col-sm"><h4 class="text-secondary">----</h4></div>
                 </div>
             </div>
         </div>
     </header>
-    <main class="container-fluid">
+    <main class="container-fluid" style="height: 65vh;">
         <div class="container" style="margin-top: 5%;">
             <div class="row">
                 <div class="col">
@@ -53,6 +66,22 @@
             </div>
         </div>
     </main>
-    <footer class="container-fluid"></footer>
+    <footer class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <h6>Поделиться:</h6>
+                    <script src="https://yastatic.net/share2/share.js"></script>
+                    <div class="ya-share2" data-curtain data-shape="round" data-limit="3" data-services="vkontakte,telegram,whatsapp"></div> 
+                </div>
+                <div class="col-sm">
+                    <h6>Вопросы:</h6>
+                    <ul>
+                        <li><a href="page/old.html">Почему мой браузер устарел?</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
