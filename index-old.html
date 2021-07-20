@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+
+    <title>Сайт Kpokodul</title>
+
+    <script src="js/granim.min.js"></script>
+
+    <style>
+        #canvas-basic {
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas-basic"></canvas>
+    <header class="container">
+        <div class="row">
+            <div class="one-half column" style="margin-top: 25%">
+                <h3>Сайт Kpokodul</h3>
+                <p>Это главная страница сайта-домена Kpokodul. На домене (kpokodul.ru) представлены разнообразные сайты-поддомены посвящённые преимущественно компьютерной тематики.</p>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <div class="row">
+            <div class="column" style="margin-top: 5%">
+                <ul>
+                    <h4>Windows</h4>
+                    <ul>
+                        <h5>Справка Windows XP</h5>
+                        <p>Web справка, которая призвана познакомить пользователя с возможностями новой операционной системы (Windows XP). А если пользователь раннее уже был знаком с семейством операционных систем Windows, показать преимущества Windows XP.</p>
+                        <h6>Web справка. Знакомство с Windows XP: <a href="https://win.kpokodul.ru/XP">Перейти</a></h6>
+                    </ul>
+                </ul>
+                
+                
+            </div>
+        </div>
+    </main>
+    <script>
+        var granimInstance = new Granim({
+            element: '#canvas-basic',
+            direction: 'left-right',
+            isPausedWhenNotInView: true,
+            states : {
+                "default-state": {
+                    gradients: [
+                        ['#d4dae2', '#788ca4'],
+                        ['#788ca4', '#d4dae2']
+                    ]
+                }
+            }
+        });
+    </script>
+</body>
+</html>
