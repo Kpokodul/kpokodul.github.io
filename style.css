@@ -1,14 +1,20 @@
+/* :root {
+    --white-bg-color: #f8f9fa;
+} */
+
 header {
-    background-color: #f8f9fa;
+    background-color: #f8f9fa; /* var(--white-bg-color) */
 }
 header > .row{
     padding: 1%;
 }
 
 footer {
-    background-color: #f8f9fa;
+    background-color: #f8f9fa; /* var(--white-bg-color) */
     padding: 1%;
 }
+
+
 
 @media (max-width: 1280px) {
     header > .row > .col-1 {
