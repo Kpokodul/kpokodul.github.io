@@ -29,4 +29,15 @@ footer {
     .col-sm {
         margin-top: 10px;
     }
+    
+}
+@media (max-width: 1065px) {
+    #carousel-caption-name {
+        visibility: hidden;
+    }
+}
+@media (min-width: 1065px) {
+    #carousel-caption-link {
+        visibility: hidden;
+    }
 }
