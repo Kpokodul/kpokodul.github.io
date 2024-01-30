@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>abv.py</title>
+<style>
+
+@page {
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+    margin-left: 0.5cm;
+    margin-right: 0.5cm;
+}
+
+pre {
+    counter-reset: line;
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+code {
+    counter-increment: line;
+	padding-left: 1em;    
+}
+code:before {
+	color: gray;
+    content: counter(line);
+    padding-right: 0.5em;
+    margin-right: 0.5em;
+    border-right: solid gray 1px;
+    display: inline-block;
+    text-align: right;
+    width: 2em;
+    font-style: italic;
+    -webkit-user-select: none;
+}
+
+.keyword {
+	font-weight: bold;
+	color: #7f0055;
+}
+
+.builtin {
+	color: #7f0055
+}
+
+.number {
+	color: #B04600;
+}
+
+.definition {
+	font-weight: bold;
+	color: darkblue;
+}
+
+.local_name {
+	font-style: italic;
+}
+
+.comment {
+	color: gray;
+}
+
+.string, .string3, .open_string, .open_string3 {
+	color: DarkGreen;
+}
+
+.open_string, .open_string3 {
+	background-color: #c3f9d3;
+}
+
+.unclosed_expression {
+	background-color: LightGray;
+}
+</style>
+</head>
+
+<body>
+<pre>
+<code><span class='COLOR_TODO'>A = </span><span class='builtin COLOR_TODO'>int</span><span class='COLOR_TODO'>(</span><span class='builtin COLOR_TODO'>input</span><span class='COLOR_TODO'>(</span><span class='string COLOR_TODO'>"Возраст Антона: "</span><span class='COLOR_TODO'>))</span></code>
+<code><span class='COLOR_TODO'>B = </span><span class='builtin COLOR_TODO'>int</span><span class='COLOR_TODO'>(</span><span class='builtin COLOR_TODO'>input</span><span class='COLOR_TODO'>(</span><span class='string COLOR_TODO'>"Возраст Бориса: "</span><span class='COLOR_TODO'>))</span></code>
+<code><span class='COLOR_TODO'>V = </span><span class='builtin COLOR_TODO'>int</span><span class='COLOR_TODO'>(</span><span class='builtin COLOR_TODO'>input</span><span class='COLOR_TODO'>(</span><span class='string COLOR_TODO'>"Возраст Виктора: "</span><span class='COLOR_TODO'>))</span></code>
+<code></code>
+<code><span class='keyword'>if</span> A == B == V:</code>
+<code>    <span class='builtin'>print</span>(<span class='string'>"Ответ: Антон, Борис и Виктор одного возраста."</span>)</code>
+<code><span class='keyword'>else</span>:</code>
+<code>    <span class='keyword'>if</span> A &gt; B:</code>
+<code>        <span class='keyword'>if</span> A &gt;= V:</code>
+<code>            <span class='keyword'>if</span> A == V:</code>
+<code>                <span class='builtin'>print</span>(<span class='string'>"Ответ: Антон и Виктор старше Бориса."</span>)</code>
+<code>            <span class='keyword'>else</span>:</code>
+<code>                <span class='builtin'>print</span>(<span class='string'>"Ответ: Антон старше всех."</span>)</code>
+<code>        <span class='keyword'>else</span>:</code>
+<code>            <span class='builtin'>print</span>(<span class='string'>"Ответ: Виктор старше всех."</span>)</code>
+<code>    <span class='keyword'>else</span>:</code>
+<code>        <span class='keyword'>if</span> B &gt;= V:</code>
+<code>            <span class='keyword'>if</span> B == V:</code>
+<code>                <span class='builtin'>print</span>(<span class='string'>"Ответ: Борис и Виктор старше Антона."</span>)</code>
+<code>            <span class='keyword'>else</span>:</code>
+<code>                <span class='keyword'>if</span> B == A:</code>
+<code>                    <span class='builtin'>print</span>(<span class='string'>"Ответ: Антон и Борис старше Виктора."</span>)</code>
+<code>                <span class='keyword'>else</span>:</code>
+<code>                    <span class='builtin'>print</span>(<span class='string'>"Ответ: Борис старше всех."</span>)</code>
+<code>        <span class='keyword'>else</span>:</code>
+<code>            <span class='builtin'>print</span><span class='surrounding_parens'>(</span><span class='string'>"Ответ: Виктор старше всех."</span><span class='surrounding_parens'>)</span></code>
+
+</pre>
+</body>
+</html>
