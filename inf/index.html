@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8"/>
+	<title>Программирование на языке Python | Решение задач</title>
+	<style>
+		h1, h3 {
+			margin: 0;
+			padding: 0;
+		}
+		textarea {
+			margin: 0;
+			margin-top: 5px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Программирование на языке Python | Решение задач</h1>
+	<h3 style="margin-bottom: 2%">Автоматизированная система</h3>
+	
+	<table cellpadding="2px">
+		<tr>
+			<td>Введите код задачи:</td>
+			<td><textarea id="code" style="resize: none;" maxlength="7" rows="1"></textarea></td>
+			<td><button onclick="op()">Открыть</button></td>
+		</tr>
+	</table>
+	
+	<script>
+		function op() {
+			if (document.getElementById('code').value == "") {alert("Введите код задачи!");} else {
+			window.location = "./python/" + document.getElementById('code').value + ".html";}
+		}
+	</script>
+</body>
+</html>

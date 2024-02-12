@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<title>Циклические алгоритмы. Цикл while. Задачи. Задача А</title>
+<style>
+
+@page {
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+    margin-left: 0.5cm;
+    margin-right: 0.5cm;
+}
+
+pre {
+    counter-reset: line;
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+code {
+    counter-increment: line;
+	padding-left: 1em;    
+}
+code:before {
+	color: gray;
+    content: counter(line);
+    padding-right: 0.5em;
+    margin-right: 0.5em;
+    border-right: solid gray 1px;
+    display: inline-block;
+    text-align: right;
+    width: 2em;
+    font-style: italic;
+    -webkit-user-select: none;
+}
+
+.keyword {
+	font-weight: bold;
+	color: #7f0055;
+}
+
+.builtin {
+	color: #7f0055
+}
+
+.number {
+	color: #B04600;
+}
+
+.definition {
+	font-weight: bold;
+	color: darkblue;
+}
+
+.local_name {
+	font-style: italic;
+}
+
+.comment {
+	color: gray;
+}
+
+.string, .string3, .open_string, .open_string3 {
+	color: DarkGreen;
+}
+
+.open_string, .open_string3 {
+	background-color: #c3f9d3;
+}
+
+.unclosed_expression {
+	background-color: LightGray;
+}
+
+h1, h3 {
+	padding: 0;
+	margin: 0;
+}
+</style>
+</head>
+
+<body>
+<h1>Циклические алгоритмы. Цикл while. Задачи</h1>
+<h3>«A»: Напишите программу, которая получает два целых числа A и B (0 &lt; A &lt; B) и выводит квадраты всех натуральных чисел в интервале от A до B.</h3>
+<pre>
+<code><span class='builtin'>print</span>(<span class='string'>"Введите два целых числа:"</span>)</code>
+<code>a, b = <span class='builtin'>map</span>(<span class='builtin'>int</span>, <span class='builtin'>input</span>().<span class='method_call'>split</span>())</code>
+<code></code>
+<code><span class='keyword'>while</span> a &lt;= b:</code>
+<code>    <span class='builtin'>print</span>(a, <span class='string'>"*"</span>, a, <span class='string'>"="</span>, a**<span class='number'>2</span>, sep=<span class='string'>""</span>)</code>
+<code>    a += <span class='number'>1</span></code>
+
+</pre>
+</body>
+</html>
